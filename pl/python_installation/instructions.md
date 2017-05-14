@@ -1,66 +1,114 @@
-> Niniejszy podrozdział powstał w oparciu o kurs Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> 
+> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django został napisany w Pythonie. Potrzebujemy Pythona, żeby móc cokolwiek zrobić w Django. Zacznijmy zatem od zainstalowania go! Potrzebujemy zainstalować Pythona 3.4, dlatego jeżeli masz już zainstalowaną jakąkolwiek starszą wersję, będziesz musiała ją uaktualnić.
+Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.5, so if you have any earlier version, you will need to upgrade it.
 
-### Windows
+<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
-Możesz ściągnąć Pythona pod Windows z tej strony: https://www.python.org/downloads/release/python-343/. Po pobraniu pliku ***.msi**, uruchom go (klikając dwukrotnie na niego) i postępuj według wyświetlanych instrukcji. Koniecznie zapamiętaj ścieżkę (katalog), w którym zainstalowałaś Pythona. Będzie Ci niebawem potrzebna!
+First check whether your computer is running a 32-bit version or a 64-bit version of Windows at https://support.microsoft.com/en-au/kb/827218. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
-Na jedno trzeba zwrócić uwagę: na drugiej stronie instalatora nazwanej "Customize" ("Dostosuj do potrzeb") przewiń na sam dół i wybierz "Add python.exe to the Path" ("Dodaj python.exe do ścieżki systemowej"), tak jak to zostało pokazane na poniższym obrazku:
+One thing to watch out for: During the installation you will notice a window marked "Setup". Make sure you tick the "Add Python 3.5 to PATH" checkbox and click on "Install Now", as shown here:
 
-![Nie zapomnij dodać Pythona do ścieżki systemowej (ang. Path)](../python_installation/images/add_python_to_windows_path.png)
+![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-### Linux
+In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → All Programs → Accessories → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
 
-Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem. Aby się upewnić (a także sprawdzić jego wersję) otwórz konsolę i wpisz następujące polecenie:
+![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+
+Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.5.x installer fails with an error, you can try either: 1. install all Windows Updates and try to install Python 3.5 again; or 2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.4](https://www.python.org/downloads/release/python-344/).
+
+If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+
+![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+
+<!--endsec-->
+
+<!--sec data-title="OS X" data-id="python_OSX"
+data-collapse=true ces-->
+
+> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+
+You need to go to the website https://www.python.org/downloads/release/python-351/ and download the Python installer:
+
+* Download the *Mac OS X 64-bit/32-bit installer* file,
+* Double click *python-3.5.1-macosx10.6.pkg* to run the installer.
+
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="python_linux"
+data-collapse=true ces-->
+
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+
+{% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.4.3
+    Python 3.5.1
     
 
-Jeżeli nie masz zainstalowanego Pythona lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
+If you have a different 'micro version' of Python installed, e.g. 3.5.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
-#### Debian lub Ubuntu
+<!--endsec-->
 
-Wpisz w konsoli poniższe polecenie:
+<!--sec data-title="Debian or Ubuntu" data-id="python_debian"
+data-collapse=true ces-->
 
-    $ sudo apt-get install python3.4
+Type this command into your console:
+
+{% filename %}command-line{% endfilename %}
+
+    $ sudo apt-get install python3.5
     
 
-#### Fedora (do 21)
+<!--endsec-->
 
-Użyj następującego polecenia w konsoli:
+<!--sec data-title="Fedora (up to 21)" data-id="python_fedora"
+data-collapse=true ces-->
 
-    $ sudo yum install python3.4
+Use this command in your console:
+
+{% filename %}command-line{% endfilename %}
+
+    $ sudo yum install python3
     
 
-#### Fedora (22+)
+<!--endsec-->
 
-Użyj następującego polecenia w konsoli:
+<!--sec data-title="Fedora (22+)" data-id="python_fedora22"
+data-collapse=true ces-->
 
-    $ sudo dnf install python3.4
+Use this command in your console:
+
+{% filename %}command-line{% endfilename %}
+
+    $ sudo dnf install python3
     
 
-#### openSUSE
+<!--endsec-->
 
-Użyj następującego polecenia w konsoli:
+<!--sec data-title="openSUSE" data-id="python_openSUSE"
+data-collapse=true ces-->
+
+Use this command in your console:
+
+{% filename %}command-line{% endfilename %}
 
     $ sudo zypper install python3
+    
 
+<!--endsec-->
 
-### OS X
+Verify the installation was successful by opening the *Terminal* application and running the `python3` command:
 
-Przejdź na stronę https://www.python.org/downloads/release/python-343/ i pobierz instalator Pythona:
-
-  * Pobierz plik o nazwie *Mac OS X 64-bit/32-bit installer*,
-  * Kliknij dwukrotnie na *python-3.4.3-macosx10.6.pkg*, by uruchomić instalator.
-
-Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz aplikację *Terminal* i uruchom polecenie `python3`:
+{% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.4.3
+    Python 3.5.1
     
+
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.5.
 
 * * *
 
-W razie jakichkolwiek wątpliwości albo jeśli coś poszło nie tak i nie wiesz, co dalej robić - zapytaj mentora lub osobę prowadzącą kurs! Czasami nie wszystko idzie tak, jak powinno i najlepszym wyjściem z sytuacji jest poprosić o pomoc kogoś bardziej doświadczonego.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
