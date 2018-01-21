@@ -8,7 +8,7 @@
 
 Kullanacağımız diğer harici hizmet, bir kod barındırma hizmeti olan [GitHub](https://www.github.com)'dır. Orada başkaları da var fakat hemen hemen tüm programcıların bir GitHub hesabı vardır ve şimdi senin de olacak!
 
-Bu üç yer senin için önemli olacaktır. Yerel bilgisayarınız, geliştirme ve test gerçekleştirdiğiniz yer olacak. Değişikliklerden memnun olduğunuzda, programınızın bir kopyasını GitHub'a yerleştirirsiniz. Web sitesi PythonAnywhere üzerinde olacağından GitHub'tan kodunun kopyasını alarak güncelleyebilirsin.
+Bu üç yer sizin için önemli olacaktır. Yerel bilgisayarınız, geliştirme ve test gerçekleştirdiğiniz yer olacak. Değişikliklerden memnun olduğunuzda, programınızın bir kopyasını GitHub'a yerleştirebilirsiniz. Web sitesi PythonAnywhere üzerinde olacağından GitHub'tan kodunun kopyasını alarak güncelleyebilirsiniz.
 
 # Git
 
