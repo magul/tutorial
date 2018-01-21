@@ -14,8 +14,8 @@ Every page on the Internet needs its own URL. This way your application knows wh
 
 Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
-
 {% filename %}mysite/urls.py{% endfilename %}
+
 ```python
 """mysite URL Configuration
 
@@ -36,6 +36,7 @@ Lines between triple quotes (`'''` or `"""`) are called docstrings – you can w
 The admin URL, which you visited in previous chapter, is already here:
 
 {% filename %}mysite/urls.py{% endfilename %}
+
 ```python
     url(r'^admin/', admin.site.urls),
 ```
@@ -65,7 +66,6 @@ Writing separate views for all the post numbers would be really annoying. With r
 * **/** tells django that another `/` character should follow
 * **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
 
-
 ## Your first Django URL!
 
 Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
@@ -77,6 +77,7 @@ Go ahead, add a line that will import `blog.urls`. Note that we are using the `i
 Your `mysite/urls.py` file should now look like this:
 
 {% filename %}mysite/urls.py{% endfilename %}
+
 ```python
 from django.conf.urls import include
 from django.conf.urls import url
@@ -92,12 +93,12 @@ Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to 
 
 Writing regular expressions in Python is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
 
-
 ## blog.urls
 
 Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
 
 {% filename %}blog/urls.py{% endfilename %}
+
 ```python
 from django.conf.urls import url
 from . import views
@@ -108,6 +109,7 @@ Here we're importing Django's function `url` and all of our `views` from the `bl
 After that, we can add our first URL pattern:
 
 {% filename %}blog/urls.py{% endfilename %}
+
 ```python
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
@@ -122,6 +124,6 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 ![Error](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/
