@@ -9,31 +9,37 @@ If you find it useful, you can follow this chapter too. But if you want to start
 Good luck!
 
 # Installation
+
 In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces-->
-{% include "/chromebook_setup/instructions.md" %}
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+
 <!--endsec-->
 
 # Install Python
+
 {% include "/python_installation/instructions.md" %}
 
 # Set up virtualenv and install Django
+
 {% include "/django_installation/instructions.md" %}
 
 # Install a code editor
+
 {% include "/code_editor/instructions.md" %}
 
 # Install Git
+
 {% include "/deploy/install_git.md" %}
 
 # Create a GitHub account
+
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
 
 # Create a PythonAnywhere account
-{% include "/deploy/signup_pythonanywhere.md" %}
 
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # Start reading
 
@@ -46,7 +52,6 @@ Congratulations, you are all set up and ready to go! If you still have some time
 * [Introduction to Python](../python_introduction/README.md)
 
 * [What is Django?](../django/README.md)
-
 
 # Enjoy the workshop!
 
