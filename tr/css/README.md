@@ -1,20 +1,20 @@
-# CSS – make it pretty!
+# CSS - güzelleştirin!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+Blogumuz çirkin görünüyor, değil mi? Kendini iyi vakti geldi? Bunun için CSS kullanacağız.
 
-## What is CSS?
+## CSS nedir?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Basamaklı Stil sayfası (CSS), bir biçimlendirme dili (HTML gibi) kulanarak yazılan bir web sitesinin görünümünü ve biçimlendirmesini açıklamak için kullanılan dildir. Web sayfamız için makyaj olarak davranın. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Ancak sıfırdan başlamak istemiyoruz, değil mi? Bir kez daha, programcıların internette ücretsiz olarak piyasaya sürdüğü şeyleri kullanacağız. Tekerleği yeniden icat etmek eğlenceli değil, biliyorsun.
 
-## Let's use Bootstrap!
+## Bootstrap'ı kullanalım!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Önyükleme, güzel web sitelerini geliştirmek için en popüler HTML ve CSS çerçevesinden biridir:
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Twitter'da çalışan programcılar tarafından yazılmıştır. Şimdi dünyanın her yerinden gönüllüler tarafından geliştirildi!
 
-## Install Bootstrap
+## Önyükleme Kayışını Yükle
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -25,17 +25,17 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+Bu, projeniz herhangi bir dosya eklemez. Sadece internette bulunan dosyalara işaret ediyor. Sadece devam edin, web sitenizi açın ve sayfayı yenileyin. İşte burada!
 
-![Figure 14.1](images/bootstrap1.png)
+![Şekil 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+Zaten daha güzel görünüyorsun!
 
-## Static files in Django
+## Django'daki statik dosyalar
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Finally we will take a closer look at these things we've been calling **static files**. Statik dosyalar, tüm CSS ve resimlerdir. Onların içeriği istek içeriğine bağlı değildir ve her kullanıcı için aynı olacaktır.
 
-### Where to put static files for Django
+### Django için statik dosyaları nerede koymalı
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
