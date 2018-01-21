@@ -12,7 +12,7 @@ Bu üç yer senin için önemli olacaktır. Yerel bilgisayarınız, geliştirme 
 
 # Git
 
-> **Not** Eğer zaten kurulum aşamalarını yaptıysan bunu tekrar yapmana gerek yok - diğer bölüme geçebilirsin ve Git deposunu oluşturmaya başlarsın.
+> **Not** Eğer zaten kurulum aşamalarını yaptıysan bunu tekrar yapmanıza gerek yok - diğer bölüme geçebilir ve Git deposunu oluşturmaya başlayabilirsiniz.
 
 {% include "/deploy/install_git.md" %}
 
