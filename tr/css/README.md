@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Tarayıcı dosyaları verilen sırayla okuyor, bu yüzden doğru yerde olduğundan emin olmalıyız. Aksi kodları dosyamızdaki kodları önyüklenirler dosyalarındaki kodlarla geçersiz kılınabilir. We just told our template where our CSS file is located.
+Tarayıcı dosyaları verilen sırayla okuyor, bu yüzden doğru yerde olduğundan emin olmalıyız. Aksi kodları dosyamızdaki kodları önyüklenirler dosyalarındaki kodlarla geçersiz kılınabilir. Sadece CSS dosyamızın bulunduğu şablonumuzu söyledik.
 
-Your file should now look like this:
+Dosyanız şimdi şöyle görünmelidir:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,11 +135,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+Tamam, dosyayı kaydedin ve siteyi yenileyin!
 
-![Figure 14.2](images/color2.png)
+![Şekil 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+İyi iş! Belki de web sitemize biraz hava vermek ve sol taraftaki marjı artırmak istiyoruz? Hadi bunu deneyelim!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -149,9 +149,9 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Bunu CSS'nize ekleyin, dosyayı kaydedin ve nasıl çalıştığını görün!
 
-![Figure 14.3](images/margin2.png)
+![Şekil 14.3](images/margin2.png)
 
 Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
