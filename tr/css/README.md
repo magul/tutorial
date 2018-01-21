@@ -53,7 +53,7 @@ Django uygulamalarınızın klasörlerinizin herhangi birinde "statik" olarak ad
 
 ## İlk CSS dosyanız!
 
-Web sayfanıza kendi stilinizi eklemek için şimdi bir CSS dosyası oluşturalım. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Web sayfanıza kendi stilinizi eklemek için şimdi bir CSS dosyası oluşturalım. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Hazır?
 
     djangogirls
     └─── blog
@@ -80,7 +80,7 @@ h1 a {
 
 `h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Elbette, kendi rengini buraya koyabilirsin!
 
-Bir CSS dosyasında, HTML dosyasındaki öğelerin stillerini belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümündeki etiketler olarak hatırlayabilirsin. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+Bir CSS dosyasında, HTML dosyasındaki öğelerin stillerini belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümündeki etiketler olarak hatırlayabilirsin. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Sınıf ve kimlik, öğeyi kendiniz verdiğiniz isimlerdir. Sınıfların öğelerin gruplarını tanımlar ve kimlikler belirli öğelere işaret eder. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -104,7 +104,7 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+Tarayıcı dosyaları verilen sırayla okuyor, bu yüzden doğru yerde olduğundan emin olmalıyız. Aksi kodları dosyamızdaki kodları önyüklenirler dosyalarındaki kodlarla geçersiz kılınabilir. We just told our template where our CSS file is located.
 
 Your file should now look like this:
 
@@ -297,8 +297,8 @@ Bu dosyaları kaydedin ve web sitenizi yenileyin.
 
 Bravo! Harika görünüyor, değil mi? HTML'ye sınıf eklediğimiz yerleri bulmak için yapıştırdığımız kodu inceleyin ve bunları CSS'de kullandık. Turkuaz olmasını istersen, nerden değiştirebilirsin?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Bu CSS ile biraz uğraşmaktan korkmayın ve bazı şeyleri değiştirmeye çalışın. CSS ile oynamak, farklı şeylerin ne yaptığını anlamanıza yardımcı olur. Bir şeyi kırarsan endişelenmeyin - her zaman geri alabilirsiniz!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Web sitelerinizi CSS ile daha güzel yapmak hakkında her şeyi öğrenmenize yardımcı olur.
 
 Ready for the next chapter?! :)
