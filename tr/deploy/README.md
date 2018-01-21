@@ -4,11 +4,11 @@
 
 Şimdiye kadar web siteniz yalnızca bilgisayarınızda kullanılabilirdi. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
 
-Öğrendiğin gibi bir web sitesinin bir sunucuda bulunması gerekir. İnternet üzerinde bir sürü kullanılabilir sunucu sağlayıcısı var, bizim kullanacağımız [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Öğrendiğin gibi bir web sitesinin bir sunucuda bulunması gerekir. İnternet üzerinde bir sürü kullanılabilir sunucu sağlayıcısı var, bizim kullanacağımız [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere, çok fazla ziyaretçisi olmayan küçük uygulamalar için ücretsizdir bu yüzden şimdilik yeterli olacaktır.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+Kullanacağımız diğer harici hizmet, bir kod barındırma hizmeti olan [GitHub](https://www.github.com)'dır. Orada başkaları da var fakat hemen hemen tüm programcıların bir GitHub hesabı vardır ve şimdi senin de olacak!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Bu üç yer senin için önemli olacaktır. Yerel bilgisayarınız, geliştirme ve test gerçekleştirdiğiniz yer olacak. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
 # Git
 
