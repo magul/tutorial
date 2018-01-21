@@ -1,9 +1,8 @@
 > For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
-
+> 
 > This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
 Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
-
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
@@ -18,6 +17,7 @@ In upcoming steps, you'll be using the Windows Command Line (which we'll also te
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
 Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+
 1. install all Windows Updates and try to install Python 3.6 again; or
 2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
 
@@ -45,13 +45,12 @@ data-collapse=true ces-->
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
 {% filename %}command-line{% endfilename %}
-```
-$ python3 --version
-Python 3.6.1
-```
+
+    $ python3 --version
+    Python 3.6.1
+    
 
 If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
-
 
 <!--endsec-->
 
@@ -60,9 +59,9 @@ If you have a different 'micro version' of Python installed, e.g. 3.6.0, then yo
 Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
-```
-$ sudo apt-get install python3.6
-```
+
+    $ sudo apt-get install python3.6
+    
 
 <!--endsec-->
 
@@ -72,9 +71,9 @@ data-collapse=true ces-->
 Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
-```
-$ sudo dnf install python3
-```
+
+    $ sudo dnf install python3
+    
 
 If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use yum instead.
 
@@ -86,22 +85,22 @@ data-collapse=true ces-->
 Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
-```
-$ sudo zypper install python3
-```
+
+    $ sudo zypper install python3
+    
 
 <!--endsec-->
 
 Verify the installation was successful by opening a command prompt and running the `python3` command:
 
 {% filename %}command-line{% endfilename %}
-```
-$ python3 --version
-Python 3.6.1
-```
+
+    $ python3 --version
+    Python 3.6.1
+    
 
 **NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
 
-----
+* * *
 
 If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
