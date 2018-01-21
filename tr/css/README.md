@@ -71,16 +71,17 @@ Renkleri anlamak için bilgisayarlar özel kodlar kullanır. Bu kodlar <code> # 
 
 <p>Reklamlara <code> Blog / statık / css 7 blog.css </ 0> aşağıdaki kodu eklemek gerekir file:</p>
 
-<p>{% filename %}blog/static/css/blog.css{% endfilename %}</p>
+<p>{% filename%} blog / statık / css / blog.css {% endfilename%}</p>
 
 <pre><code class="css">h1 a {
     color: #FCA205;
 }
 `</pre> 
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Elbette, kendi rengini buraya koyabilirsin!
+` h1 a </ 0> bir CSS Seçici'dir. Bu, stilleri bir <code> h1 </ 0> öğesinin içindeki herhangi bir <code> a </ 0> öğesini uyguladığımızı gösterir . Böylece, <code>&lt;h1&gt;&lt;a href=""&gt; bağlantı </ 0> gibi bir şey olduğunda , <code> h1 a </ 1> tarzı geçerli olur . Bu durumda, portakal rengini <code> # FCA205 </ 0> olarak değiştirmesini söylüyoruz . Elbette, kendi rengini buraya koyabilirsin!</p>
 
-Bir CSS dosyasında, HTML dosyasındaki öğelerin stillerini belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümündeki etiketler olarak hatırlayabilirsin. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Sınıf ve kimlik, öğeyi kendiniz verdiğiniz isimlerdir. Sınıfların öğelerin gruplarını tanımlar ve kimlikler belirli öğelere işaret eder. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+<p>Bir CSS dosyasında, HTML dosyasındaki öğelerin stillerini belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümündeki etiketler olarak hatırlayabilirsin. Gibi şeyler <code> bir </ 0> , <code> h1 </ 0> ve <code> vücut </ 0> eleman isimleri örnekleridir .
+Öğeleri, <code> sınıfı </ 0> özniteliği veya <code> kimliği </ 0> özniteliği ile tanımlıyoruz . Sınıf ve kimlik, öğeyi kendiniz verdiğiniz isimlerdir. Sınıfların öğelerin gruplarını tanımlar ve kimlikler belirli öğelere işaret eder. For example, you could identify the following tag by using the tag name <code>a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -88,13 +89,12 @@ Bir CSS dosyasında, HTML dosyasındaki öğelerin stillerini belirleriz. Öğel
 
 You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+HTML şablonumuza bazı CSS eklediğimizi de söylemeliyiz. Aç ` blog / templates 7 blog / post_list.html </ 0>vdosya ve bunun en başında bu satırı ekleyin:</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename%} blog 7 şablonlar / blog / posta_list.html</p>
 
-```html
-{% load staticfiles %}
-```
+<pre><code class="html">{% load staticfiles %}
+`</pre> 
 
 We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
 
