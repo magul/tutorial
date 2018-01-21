@@ -180,27 +180,24 @@ Harika!
 
 Yukarıda belirtildiği gibi, CSS'nin bir sınıf kavramı var. Bunlar, HTML kodunun bir parçasını adlandırmanıza ve stilleri yalnızca diğer parçalara dokunmadan bu parçaya uygulamanızı sağlar. Bu süper yararlı olur! Belki de div'ınız vardır(üstbilgi ve yayınınız gibi) farklı şeyler yapıyorsunuz. Bir sınıf onları farklı görünmelerine yardımcı olur.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+Devam edin ve HTML kodunun bazı bölümlerini adlandırın. Adlı bir sınıf ekleme ` sayfa başlığı </ 0> için sizin <code> div </ 0> böyle, Üstbilginizi içerdiğini:</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename%} blog / şablonlar / blog / posta_list.html {% endfilename%}</p>
 
-```html
-<div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
-```
+<pre><code class="html">&lt;div class="page-header"&gt; 
+&lt;h1&gt;&lt;a href="/"&gt; Django kız blog </ 1> </ 0>
+`</pre> 
 
-And now add a class `post` to your `div` containing a blog post.
+Ve şimdi bir blog yazısı içeren ` div </ 0> 'na sınıf <code> sonrası </ 0> ekleyin .</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
 
-```html
-<div class="post">
+<pre><code class="html"><div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
-```
+`</pre> 
 
 Şimdi, farklı seçicilere bildirim blokları ekleyeceğiz. Selectors starting with `.` relate to classes. Aşağıdaki kodları anlamanıza yardımcı olabilecek birçok harika öğretici ve Web'de CSS hakkında açıklamalar bulunur. For now, just copy and paste it into your `blog/static/css/blog.css` file:
 
