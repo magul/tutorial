@@ -18,7 +18,7 @@ Bu üç yer sizin için önemli olacaktır. Yerel bilgisayarınız, geliştirme 
 
 ## Git depomuza başlamak
 
-Git, belirli dosyaların değişikliklerini takip edebileceğiniz kod deposudur. Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git, belirli dosyalarda yapılan değişiklikleri görebileceğiniz kod deposudur. Hadi bir projeye başlayalım. Konsolunuzu açın ve bu komutu çalıştırınız, `djangogirls` dizininin içinde:
 
 > **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
