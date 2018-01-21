@@ -33,7 +33,7 @@ Zaten daha güzel görünüyorsun!
 
 ## Django'daki statik dosyalar
 
-Finally we will take a closer look at these things we've been calling **static files**. Statik dosyalar, tüm CSS ve resimlerdir. Onların içeriği istek içeriğine bağlı değildir ve her kullanıcı için aynı olacaktır.
+Sonunda ** statık dosyalar </ 0> olarak adlandırdığımız şeyleri yakından inceleyeceğiz . Statik dosyalar, tüm CSS ve resimlerdir. Onların içeriği istek içeriğine bağlı değildir ve her kullanıcı için aynı olacaktır.</p> 
 
 ### Django için statik dosyaları nerede koymalı
 
@@ -96,13 +96,12 @@ HTML şablonumuza bazı CSS eklediğimizi de söylemeliyiz. Aç ` blog / templat
 <pre><code class="html">{% load staticfiles %}
 `</pre> 
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+Sadece statik dosyaları burada yüklüyoruz. :) `<head>` ve ` </ 2> </ 1> etiketleri arasında, önyüklenirler CSS dosyalarına yapılan bağlantılar sonrasında şu satırı ekleyin:</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename%} blog / şablonlar / posta_list.html {% endfilename%}</p>
 
-```html
-<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-```
+<pre><code class="html"><link rel="stylesheet" href="{% static 'css/blog.css' %}">
+`</pre> 
 
 Tarayıcı dosyaları verilen sırayla okuyor, bu yüzden doğru yerde olduğundan emin olmalıyız. Aksi kodları dosyamızdaki kodları önyüklenirler dosyalarındaki kodlarla geçersiz kılınabilir. Sadece CSS dosyamızın bulunduğu şablonumuzu söyledik.
 
@@ -153,26 +152,24 @@ Bunu CSS'nize ekleyin, dosyayı kaydedin ve nasıl çalıştığını görün!
 
 ![Şekil 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+Belki yazı tipini başlığımızda özelleştirebiliriz? Senin yapıştırın `<head>` içinde ` blog / templates / blog /post_list.html </ 1> dosyasında:</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
 
-```html
-<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-```
+<pre><code class="html"><link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+`</pre> 
 
 As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Şimdi ` font- aile satırını ekleyin : 'ıstakoz'; </ 0> ' yı işaretleyin ve sayfayı yenileyin:</p>
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+<p>{% filename %}blog/static/css/blog.css{% endfilename %}</p>
 
-```css
-h1 a {
+<pre><code class="css">h1 a {
     color: #FCA205;
     font-family: 'Lobster';
 }
-```
+`</pre> 
 
 ![Şekil 14.3](images/font.png)
 
@@ -298,4 +295,4 @@ Bu CSS ile biraz uğraşmaktan korkmayın ve bazı şeyleri değiştirmeye çal�
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Web sitelerinizi CSS ile daha güzel yapmak hakkında her şeyi öğrenmenize yardımcı olur.
 
-Ready for the next chapter?! :)
+Bir sonraki bölüm için hazır mısınız ?! :)
