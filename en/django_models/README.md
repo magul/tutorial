@@ -12,23 +12,21 @@ If we want to model a cat, we will create an object `Cat` that has some properti
 
 Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
 
-```
-Cat
---------
-color
-age
-mood
-owner
-purr()
-scratch()
-feed(cat_food)
-```
+    Cat
+    --------
+    color
+    age
+    mood
+    owner
+    purr()
+    scratch()
+    feed(cat_food)
+    
 
-```
-CatFood
---------
-taste
-```
+    CatFood
+    --------
+    taste
+    
 
 So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
 
@@ -38,15 +36,14 @@ We need to answer the question: What is a blog post? What properties should it h
 
 Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
 
-```
-Post
---------
-title
-text
-author
-created_date
-published_date
-```
+    Post
+    --------
+    title
+    text
+    author
+    created_date
+    published_date
+    
 
 What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
 
@@ -67,40 +64,40 @@ You can think of a model in the database as a spreadsheet with columns (fields) 
 To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
-```
-(myvenv) ~/djangogirls$ python manage.py startapp blog
-```
+
+    (myvenv) ~/djangogirls$ python manage.py startapp blog
+    
 
 {% filename %}Windows:{% endfilename %}
-```
-(myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
-```
+
+    (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
+    
 
 You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
 
-```
-djangogirls
-├── blog
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── migrations
-│   │   └── __init__.py
-│   ├── models.py
-│   ├── tests.py
-│   └── views.py
-├── db.sqlite3
-├── manage.py
-└── mysite
-    ├── __init__.py
-    ├── settings.py
-    ├── urls.py
-    └── wsgi.py
-```
+    djangogirls
+    ├── blog
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
+    ├── db.sqlite3
+    ├── manage.py
+    └── mysite
+        ├── __init__.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
+    
 
 After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
 
 {% filename %}mysite/settings.py{% endfilename %}
+
 ```python
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -120,6 +117,7 @@ In the `blog/models.py` file we define all objects called `Models` – this is a
 Let's open `blog/models.py`, remove everything from it, and write code like this:
 
 {% filename %}blog/models.py{% endfilename %}
+
 ```python
 from django.db import models
 from django.utils import timezone
@@ -149,6 +147,7 @@ It looks scary, right? But don't worry – we will explain what these lines mean
 All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
+
 - `class` is a special keyword that indicates that we are defining an object.
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
 - `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
@@ -162,7 +161,7 @@ Now we define the properties we were talking about: `title`, `text`, `created_da
 
 We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example,  a method that calculates average price could be called `calculate_average_price`.
+What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
 
 Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
@@ -175,25 +174,26 @@ If something is still not clear about models, feel free to ask your coach! We kn
 The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
-```
-(myvenv) ~/djangogirls$ python manage.py makemigrations blog
-Migrations for 'blog':
-  blog/migrations/0001_initial.py:
-  - Create model Post
-```
+
+    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
+    Migrations for 'blog':
+      blog/migrations/0001_initial.py:
+    
+      - Create model Post
+    
 
 **Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
 
 Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
 
 {% filename %}command-line{% endfilename %}
-```
-(myvenv) ~/djangogirls$ python manage.py migrate blog
-Operations to perform:
-  Apply all migrations: blog
-Running migrations:
-  Rendering model states... DONE
-  Applying blog.0001_initial... OK
-```
+
+    (myvenv) ~/djangogirls$ python manage.py migrate blog
+    Operations to perform:
+      Apply all migrations: blog
+    Running migrations:
+      Rendering model states... DONE
+      Applying blog.0001_initial... OK
+    
 
 Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
