@@ -2,7 +2,7 @@
 
 Time to get rid of the bug we created in the last chapter! :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the __Introduction to Python__ chapter.
+A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
 Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
@@ -11,6 +11,7 @@ Views are placed in the `views.py` file. We will add our *views* to the `blog/vi
 OK, let's open up this file and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 from django.shortcuts import render
 
@@ -24,6 +25,7 @@ Remember that lines starting with `#` are comments – this means that those lin
 Let's create a *view* as the comment suggests. Add the following minimal view below it:
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
