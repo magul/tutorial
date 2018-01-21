@@ -1,6 +1,6 @@
 # Deploy!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Not** Aşağıdaki bölümü geçmek bazen biraz zordur. Süreklilik ve bitirmek; dağıtımı web sitesi geliştirme sürecinin önemli bir parçası yapar. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
 
 Şimdiye kadar web siteniz yalnızca bilgisayarınızda kullanılabilirdi. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
 
@@ -32,7 +32,7 @@ Git, belirli dosyalarda yapılan değişiklikleri görebileceğiniz kod deposudu
 
 Git deposunu başlatmak, proje başına yalnızca bir kez gerekir (kullanıcı adını ve e-postayı tekrar girmek zorunda kalmazsınız).
 
-Git tüm dosyalar ve klasörlerdeki değişiklikleri izler fakat yapmamasını istediğimiz dosyalar da vardır. Bunu `.gitignore` adlı klasörü ana dizinde yaratarak sağlarız. Open up your editor and create a new file with the following contents:
+Git tüm dosyalar ve klasörlerdeki değişiklikleri izler fakat yapmamasını istediğimiz dosyalar da vardır. Bunu `.gitignore` adlı klasörü ana dizinde yaratarak sağlarız. Editörünüzü açın ve aşağıdaki içeriğe sahip yeni bir klasör oluşturun:
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -45,7 +45,7 @@ Git tüm dosyalar ve klasörlerdeki değişiklikleri izler fakat yapmamasını i
     .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+Ve "djangogirls" klasörüne `.gitignore` olarak kaydedin.
 
 > **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 > 
