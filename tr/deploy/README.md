@@ -8,11 +8,11 @@
 
 Kullanacağımız diğer harici hizmet, bir kod barındırma hizmeti olan [GitHub](https://www.github.com)'dır. Orada başkaları da var fakat hemen hemen tüm programcıların bir GitHub hesabı vardır ve şimdi senin de olacak!
 
-Bu üç yer senin için önemli olacaktır. Yerel bilgisayarınız, geliştirme ve test gerçekleştirdiğiniz yer olacak. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Bu üç yer senin için önemli olacaktır. Yerel bilgisayarınız, geliştirme ve test gerçekleştirdiğiniz yer olacak. Değişikliklerden memnun olduğunuzda, programınızın bir kopyasını GitHub'a yerleştirirsiniz. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Not** Eğer zaten kurulum aşamalarını yaptıysan bunu tekrar yapmana gerek yok - diğer bölüme geçebilirsin ve Git deposunu oluşturmaya başlarsın.
 
 {% include "/deploy/install_git.md" %}
 
