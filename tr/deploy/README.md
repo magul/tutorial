@@ -1,8 +1,8 @@
-# Deploy!
+# Yaymak!
 
-> **Not** Aşağıdaki bölümü geçmek bazen biraz zordur. Süreklilik ve bitirmek; dağıtımı web sitesi geliştirme sürecinin önemli bir parçası yapar. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Not** Aşağıdaki bölümü geçmek bazen biraz zordur. Süreklilik ve bitirmek; yayılmak web sitesi geliştirme sürecinin önemli bir parçası yapar. Web sitenizi online hale getirmeniz için bu bölüm kılavuzun merkezinde yer almaktadır bu yüzden akıl hocan biraz daha yavaş bir şekilde ilerleyebilir. Bu zamanınızın kısıtlı olduğu durumda bile eğitiminizi bitirebileceğiniz anlamına gelir.
 
-Şimdiye kadar web siteniz yalnızca bilgisayarınızda kullanılabilirdi. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Şimdiye kadar web siteniz yalnızca bilgisayar için uygundu. Artık nasıl dağıtabileceğini öğreneceksin! Dağıtıcı uygulamanızı İnternet üzerinden yayınladığınız işlemdir ve bu sayede insanlar uygulamanızı artık görebilir. :)
 
 Öğrendiğin gibi bir web sitesinin bir sunucuda bulunması gerekir. İnternet üzerinde bir sürü kullanılabilir sunucu sağlayıcısı var, bizim kullanacağımız [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere, çok fazla ziyaretçisi olmayan küçük uygulamalar için ücretsizdir bu yüzden şimdilik yeterli olacaktır.
 
@@ -47,7 +47,7 @@ Git tüm dosyalar ve klasörlerdeki değişiklikleri izler fakat yapmamasını i
 
 Ve "djangogirls" klasörüne `.gitignore` olarak kaydedin.
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Not** Dosya adının başındaki nokta önemlidir! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
