@@ -8,7 +8,7 @@
 
 Kullanacağımız diğer harici hizmet, bir kod barındırma hizmeti olan [GitHub](https://www.github.com)'dır. Orada başkaları da var fakat hemen hemen tüm programcıların bir GitHub hesabı vardır ve şimdi senin de olacak!
 
-Bu üç yer senin için önemli olacaktır. Yerel bilgisayarınız, geliştirme ve test gerçekleştirdiğiniz yer olacak. Değişikliklerden memnun olduğunuzda, programınızın bir kopyasını GitHub'a yerleştirirsiniz. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Bu üç yer senin için önemli olacaktır. Yerel bilgisayarınız, geliştirme ve test gerçekleştirdiğiniz yer olacak. Değişikliklerden memnun olduğunuzda, programınızın bir kopyasını GitHub'a yerleştirirsiniz. Web sitesi PythonAnywhere üzerinde olacağından GitHub'tan kodunun kopyasını alarak güncelleyebilirsin.
 
 # Git
 
@@ -16,7 +16,7 @@ Bu üç yer senin için önemli olacaktır. Yerel bilgisayarınız, geliştirme 
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## Git depomuza başlamak
 
 Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
 
