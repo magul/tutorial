@@ -62,21 +62,21 @@ Web sayfanıza kendi stilinizi eklemek için şimdi bir CSS dosyası oluştural�
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Bazı CSS yazma zamanı! Aç ` blog / statik / css / blog.css </ 0> kodunuzu düzenleyicisinde dosyayı.</p>
 
-Burada CSS'yi özelleştirme ve öğrenmeyle ilgili çok derinlemesine gidemeyeceğiz. Daha fazla bilgi edinmek isterseniz, bu sayfanın sonunda ücretsiz bir CSS jursu için bir öneri var.
+<p>Burada CSS'yi özelleştirme ve öğrenmeyle ilgili çok derinlemesine gidemeyeceğiz. Daha fazla bilgi edinmek isterseniz, bu sayfanın sonunda ücretsiz bir CSS jursu için bir öneri var.</p>
 
-Ama en azından biraz yapalım. Belki başlığımızın rengini değiştirebiliriz? Renkleri anlamak için bilgisayarlar özel kodlar kullanır. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+<p>Ama en azından biraz yapalım. Belki başlığımızın rengini değiştirebiliriz?
+Renkleri anlamak için bilgisayarlar özel kodlar kullanır. Bu kodlar <code> # </ 0> ile başlar ve ardından 6 harf (A-F) ve sayılar (0-9) gelir. Örneğin, mavi kod <code> # 0000FF </ 0> ' dır . Birçok renk renk kodunu http://www.colorpicker.com/ adresinde bulabilirsiniz. <code> Kırmızı </ 1> ve <code> Yeşil </ 1> gibi <a href="http://www.w3schools.com/colors/colors_names.asp"> önceden tanımlı renkler </ 0> 'i de kullanabilirsiniz .</p>
 
-In your `blog/static/css/blog.css` file you should add the following code:
+<p>Reklamlara <code> Blog / statık / css 7 blog.css </ 0> aşağıdaki kodu eklemek gerekir file:</p>
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+<p>{% filename %}blog/static/css/blog.css{% endfilename %}</p>
 
-```css
-h1 a {
+<pre><code class="css">h1 a {
     color: #FCA205;
 }
-```
+`</pre> 
 
 `h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Elbette, kendi rengini buraya koyabilirsin!
 
