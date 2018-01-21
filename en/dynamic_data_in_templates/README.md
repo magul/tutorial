@@ -9,6 +9,7 @@ OK, so how will we achieve this?
 We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 from django.shortcuts import render
 
@@ -19,6 +20,7 @@ def post_list(request):
 Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 from django.shortcuts import render
 from .models import Post
@@ -35,6 +37,7 @@ You should already be familiar with how QuerySets work. We talked about them in 
 So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
@@ -42,6 +45,7 @@ Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date
 Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`, but don't forget to first add `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 from django.shortcuts import render
 from django.utils import timezone
@@ -56,11 +60,12 @@ The last missing part is passing the `posts` QuerySet to the template context. D
 
 Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :)  It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
 So finally our `blog/views.py` file should look like this:
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 from django.shortcuts import render
 from django.utils import timezone
