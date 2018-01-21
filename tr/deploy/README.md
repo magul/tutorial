@@ -20,7 +20,7 @@ Bu üç yer sizin için önemli olacaktır. Yerel bilgisayarınız, geliştirme 
 
 Git, belirli dosyalarda yapılan değişiklikleri görebileceğiniz kod deposudur. Hadi bir projeye başlayalım. Konsolunuzu açın ve bu komutu çalıştırınız, `djangogirls` dizininin içinde:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Not** Depoyu başlatmadan önce geçerli dizini `pwd` (Mac OS X/Linux) yada `cd` (Windows) komutuyla kontrol edin. `djangogirls` klasörünün içinde olmalısın.
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,9 +30,9 @@ Git, belirli dosyalarda yapılan değişiklikleri görebileceğiniz kod deposudu
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Git deposunu başlatmak, proje başına yalnızca bir kez gerekir (kullanıcı adını ve e-postayı tekrar girmek zorunda kalmazsınız).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Git tüm dosyalar ve klasörlerdeki değişiklikleri izler fakat yapmamasını istediğimiz dosyalar da vardır. Bunu `.gitignore` adlı klasörü ana dizinde yaratarak sağlarız. Open up your editor and create a new file with the following contents:
 
 {% filename %}.gitignore{% endfilename %}
 
