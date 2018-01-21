@@ -26,8 +26,8 @@ Git, belirli dosyalarda yapılan değişiklikleri görebileceğiniz kod deposudu
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Your Name"
-    $ git config --global user.email you@example.com
+    $ git config --global user.name "İsminiz"
+    $ git config --global user.email sen@örnek.com
     
 
 Git deposunu başlatmak, proje başına yalnızca bir kez gerekir (kullanıcı adını ve e-postayı tekrar girmek zorunda kalmazsınız).
@@ -49,7 +49,7 @@ Ve "djangogirls" klasörüne `.gitignore` olarak kaydedin.
 
 > **Not** Dosya adının başındaki nokta önemlidir! Eğer onu yaratmakta bir sıkıntı yaşıyorsanız (Örneğin Mac'ler bulucu vasıtasıyla. ile başlayan klasör yaratmayı sevmezler) editörünüzdeki farklı kaydet özelliğini kullanabilirsiniz; her zaman işe yarar.
 > 
-> **Not** `.gitignore` dosyasının içindeki `db.sqlite3` belirttiğin bir dosya. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Not** `.gitignore` dosyasının içindeki `db.sqlite3` belirttiğin bir dosya. Bu dosya senin yerel veritabanın, bütün yayınlar burada depolanır. PythonAnywhere'deki web siteniz farklı bir veritabanı kullanacağından bunu depona eklemek istemiyoruz. Veritabanı geliştirme makineniz gibi SQLite olabilir fakat MySQL daha çok ziyaretçi taşıma kapasitesine sahip olduğu için genellikle bunu kullanacaksınız. Her iki durumda da, SQLite veritabanı GitHuB kopyası için görmezden gelinecek. Bu tüm oluşturduğunuz yayınların kalacağına ve yerel olarak kullanılabileceği anlamına geliyor fakat bunları yeniden üretmeniz gerekecek. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
