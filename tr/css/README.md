@@ -21,7 +21,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
@@ -37,30 +37,30 @@ Sonunda ** statık dosyalar </ 0> olarak adlandırdığımız şeyleri yakından
 
 ### Django için statik dosyaları nerede koymalı
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django, dahili "admin" uygulaması için statik dosyaları nerede bulacağını zaten biliyor. Şimdi kendi uygulamanız için ` blog </ 0> için bazı statik dosyalar eklememiz yeterlidir .</p>
 
-We do that by creating a folder called `static` inside the blog app:
+<p>Bunu, blog uygulaması içinde <code> statik </ 0> olarak adlandırılanbir klasör oluşturarak yaparız :</p>
 
-    djangogirls
-    ├── blog
-    │   ├── migrations
-    │   ├── static
-    │   └── templates
-    └── mysite
-    
+<pre><code>djangogirls
+├── blog
+│   ├── migrations
+│   ├── static
+│   └── templates
+└── mysite
+`</pre> 
 
 Django uygulamalarınızın klasörlerinizin herhangi birinde "statik" olarak adlandırılan klasörleri otomatik olarak bulacaktır. Sonra içeriğini statik statik dosyalar olarak kulanılabilir.
 
 ## İlk CSS dosyanız!
 
-Web sayfanıza kendi stilinizi eklemek için şimdi bir CSS dosyası oluşturalım. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Hazır?
+Web sayfanıza kendi stilinizi eklemek için şimdi bir CSS dosyası oluşturalım. ` statik </ 0> dizininizin içine <code> css </ 0> adında yeni bir dizin oluşturun . Daha sonra bu <code> css </ 0> dizisinin içine <code> blog.css </ 0> adında yeni bir dosya oluşturun . Hazır?</p>
 
-    djangogirls
-    └─── blog
-         └─── static
-              └─── css
-                   └─── blog.css
-    
+<pre><code>djangogirls
+└─── blog
+     └─── static
+          └─── css
+               └─── blog.css
+`</pre> 
 
 Bazı CSS yazma zamanı! Aç ` blog / statik / css / blog.css </ 0> kodunuzu düzenleyicisinde dosyayı.</p>
 
@@ -196,12 +196,11 @@ Ve şimdi bir blog yazısı içeren ` div </ 0> 'na sınıf <code> sonrası </ 0
 </div>
 `</pre> 
 
-Şimdi, farklı seçicilere bildirim blokları ekleyeceğiz. Selectors starting with `.` relate to classes. Aşağıdaki kodları anlamanıza yardımcı olabilecek birçok harika öğretici ve Web'de CSS hakkında açıklamalar bulunur. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+Şimdi, farklı seçicilere bildirim blokları ekleyeceğiz. Selectors starting with `.` relate to classes. Aşağıdaki kodları anlamanıza yardımcı olabilecek birçok harika öğretici ve Web'de CSS hakkında açıklamalar bulunur. Şimdilik, kopyalayıp ` blog / statık / css / blog.css </ 0> dosyanıza yapıştırın :</p>
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+<p>{% filename %}blog/static/css/blog.css{% endfilename %}</p>
 
-```css
-.page-header {
+<pre><code class="css">.page-header {
     background-color: #ff9400;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
@@ -247,7 +246,7 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
-```
+`</pre> 
 
 Ardından, bildirileri sınıf bildirimleri ile görüntüleyen HTML kodunu çevreleyin. Değiştirin:
 
@@ -293,6 +292,6 @@ Bravo! Harika görünüyor, değil mi? HTML'ye sınıf eklediğimiz yerleri bulm
 
 Bu CSS ile biraz uğraşmaktan korkmayın ve bazı şeyleri değiştirmeye çalışın. CSS ile oynamak, farklı şeylerin ne yaptığını anlamanıza yardımcı olur. Bir şeyi kırarsan endişelenmeyin - her zaman geri alabilirsiniz!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Web sitelerinizi CSS ile daha güzel yapmak hakkında her şeyi öğrenmenize yardımcı olur.
+Bu ücretsiz çevrimiçi  Codeacademy HTML & amp; CSS kursu </ 0> . Web sitelerinizi CSS ile daha güzel yapmak hakkında her şeyi öğrenmenize yardımcı olur.</p> 
 
 Bir sonraki bölüm için hazır mısınız ?! :)
